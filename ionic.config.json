@@ -1,0 +1,7 @@
+{
+  "name": "aaua-mart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
