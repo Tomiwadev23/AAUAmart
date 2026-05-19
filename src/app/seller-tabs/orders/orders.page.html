@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar class="kk">
+    <div class=" w-full pt-10 pb-6 px-4 h-full flex flex-col items-center   gap-8">
+      <div class=" w-full justify-between flex items-center">
+        <span class="text-[23px] font-bold text-black">My Orders</span>
+
+      </div>
+      <div class="flex  items-center justify-center w-full gap-3">
+         <div class="flex bg-gray-50 pt-3 border rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 w-full ">
+        <ion-searchbar placeholder="Enter order to track " class=" searchb   "></ion-searchbar>
+        <!-- <button class="btn text-white text-[13px] items-center justify-center flex w-1/4 h-9 rounded-md" >
+          Track
+        </button> -->
+      </div>
+        <button class="bg-blue-700 text-white items-center justify-center flex  p-2 rounded-md">
+          <ion-icon name="options-outline" class="w-9 h-9 text-white"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="bb">
+  <div class="p-4 flex flex-col gap-4">
+    <div class="bg-white w-full  rounded-md border shadow-lg flex flex-col gap-3 p-3">
+      <div class=" w-full flex items-center justify-between border-b py-2">
+        <div>
+          <span class="font-semibold italic">#ORD-1234</span>
+          <p class="text-[12px] text-gray-500">2 hours ago</p>
+        </div>
+
+        <span class="bg-yellow-200 px-2 py-1 text-[11px] rounded-full text-yellow-950">
+          Pending
+        </span>
+
+      </div>
+      <div>
+        <div>
+          <span class="text-gray-500 text-[11px]">Product</span>
+          <p class="text-[12px] ">Fresh Tomatoes(5kg)</p>
+        </div>
+      </div>
+      <div class=" w-full flex items-center justify-between">
+        <div class="flex flex-col ">
+          <span class="text-[11px] text-gray-600">Buyer</span>
+          <span class="text-[12px] ">Mary Johnson</span>
+          <span class="text-[11px] text-gray-600">+234 915 325 8164</span>
+
+        </div>
+
+        <div>
+          <span class="text-gray-600 text-[11px]">Amount</span>
+          <p class="text-[15px] text-black font-bold">3500</p>
+        </div>
+
+      </div>
+      <div class="w-full  py-2 flex justify-between items-center gap-3">
+        <button
+          class="bg-blue-700 text-white px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center" (click)="showToast('Order has been Accepted')">
+          Accept Order</button>
+        <button
+          class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center" (click)="showAlert('do you want to decline order?')">
+          Decline</button>
+
+      </div>
+
+
+    </div>
+    <div class="bg-white w-full  rounded-md border shadow-lg flex flex-col gap-3 p-3">
+      <div class=" w-full flex items-center justify-between border-b py-2">
+        <div>
+          <span class="font-semibold italic">#ORD-1234</span>
+          <p class="text-[12px] text-gray-500">2 hours ago</p>
+        </div>
+
+        <span class="bg-blue-200 px-2 py-1 text-[11px] rounded-full text-blue-700">
+          Processing
+        </span>
+
+      </div>
+      <div>
+        <div>
+          <span class="text-gray-500 text-[11px]">Product</span>
+          <p class="text-[12px] ">Fresh Tomatoes(5kg)</p>
+        </div>
+      </div>
+      <div class=" w-full flex items-center justify-between">
+        <div class="flex flex-col ">
+          <span class="text-[11px] text-gray-600">Buyer</span>
+          <span class="text-[12px] ">Mary Johnson</span>
+          <span class="text-[11px] text-gray-600">+234 915 325 8164</span>
+
+        </div>
+
+        <div>
+          <span class="text-gray-600 text-[11px]">Amount</span>
+          <p class="text-[15px] text-black font-bold">3500</p>
+        </div>
+
+      </div>
+      <div class="w-full  py-2 flex justify-between items-center gap-3">
+        <button
+          class="bg-blue-700 text-white h-11 px-4 py-2 rounded-md text-[12px] w-full  flex items-center gap-1 justify-center">
+          Mark as Delivered</button>
+        <!-- <button
+          class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center">
+          Decline</button> -->
+
+      </div>
+
+
+    </div>
+  </div>
+  
+ <div class="border-t border-gray-300 dark:border-gray-700 mt-5 mb-5 pt-6 text-center">
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        © 2026 AAUAmart. All rights reserved.
+      </p>
+    </div>
+</ion-content>

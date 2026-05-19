@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar class="kk">
+    <div class=" w-full  pt-10 pb-3 px-4 h-full flex flex-col items-center   gap-8">
+      <div class=" w-full justify-between flex items-center">
+        <span class="text-[20px] font-bold text-black">Seller Management</span>
+        <ion-chip class="bg-gray-50 border" (click)="goToCreateSeller()">
+
+          <ion-label>Add seller</ion-label>
+          <ion-avatar class="bg-purple-700 flex items-center justify-center">
+            <ion-icon name="add" class="w-5 h-5 text-white"></ion-icon>
+          </ion-avatar>
+        </ion-chip>
+      </div>
+
+       <div class="flex bg-gray-50 pt-3 border rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 w-full ">
+        <ion-searchbar placeholder="Search for Seller " class=" searchb   "></ion-searchbar>
+        <!-- <button class="btn text-white text-[13px] items-center justify-center flex w-1/4 h-9 rounded-md" >
+          Track
+        </button> -->
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="whole">
+
+  <div class=" w-full h-[100vh] p-4 flex flex-col gap-4">
+    <div class="bg-white w-full rounded-md border p-4 flex flex-col gap-4 shadow-md ">
+      <div class="flex items-center gap-4 w-full border-b py-3">
+        <div class="bg-purple-100 rounded-full size-14 flex items-center justify-center">
+          <lucide-icon [img]="store" class="text-purple-700"></lucide-icon>
+
+        </div>
+        <div>
+          <h1 class="text-[15px]">John Farmer</h1>
+          <p class="text-[12px] text-purple-700">School Farm</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="flex items-center gap-2">
+          <ion-icon name="pin-outline"></ion-icon>
+          <span class="text-[13px]">Ibadan,Oyo state</span>
+        </p>
+        <p class="flex items-center gap-2">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <span class="text-[13px]">Joined Jan 15,2026</span>
+        </p>
+        <div class="flex items-center justify-between mb-2">
+          <p class="text-[12px]">product: <span class="text-black text-[15px]">24</span> </p>
+          <p class="text-[12px]"> Sales: <span class="text-green text-[15px] text-green-700">#500</span> </p>
+        </div>
+        <div class="w-full flex justify-between flex-row gap-2 ">
+          <button class="bg-purple-100 w-2/5 h-11 rounded-md flex justify-center items-center gap-2">
+            <lucide-icon [img]="eye" class="w-5 h-5 text-purple-700"></lucide-icon>
+
+            <span class="text-purple-700 text-[12px]">View Details</span>
+          </button>
+          <button class="bg-orange-100 w-2/5 h-11 rounded-md flex justify-center items-center gap-2"(click)="showAlert('Are you sure you want to Suspend Seller Account?')">
+            <lucide-icon [img]="ban" class="w-5 h-5 text-orange-700"></lucide-icon>
+
+            <span class="text-[12px] text-orange-700">Suspend</span>
+          </button>
+          <button class="bg-red-100 w-1/5 h-11 rounded-md flex justify-center items-center gap-2"  (click)="showAlert('Are you sure you want to Delete Account?')">
+            <lucide-icon [img]="trash" class="w-5 h-5 text-red-700"></lucide-icon>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-white w-full rounded-md border p-4 flex flex-col gap-4 shadow-md ">
+      <div class="flex items-center gap-4 w-full border-b py-3">
+        <div class="bg-purple-100 rounded-full size-14 flex items-center justify-center">
+          <lucide-icon [img]="store" class="text-purple-700"></lucide-icon>
+
+        </div>
+        <div>
+          <h1 class="text-[15px]">John Farmer</h1>
+          <p class="text-[12px] text-purple-700">School Farm</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="flex items-center gap-2">
+          <ion-icon name="pin-outline"></ion-icon>
+          <span class="text-[13px]">Ibadan,Oyo state</span>
+        </p>
+        <p class="flex items-center gap-2">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <span class="text-[13px]">Joined Jan 15,2026</span>
+        </p>
+        <div class="flex items-center justify-between mb-2">
+          <p class="text-[12px]">product: <span class="text-black text-[15px]">24</span> </p>
+          <p class="text-[12px]"> Sales: <span class="text-green text-[15px] text-green-700">#500</span> </p>
+        </div>
+        <div class="w-full flex justify-between flex-row gap-2 ">
+          <button class="bg-purple-100 w-2/5 h-11 rounded-md flex justify-center items-center gap-2">
+            <lucide-icon [img]="eye" class="w-5 h-5 text-purple-700"></lucide-icon>
+
+            <span class="text-purple-700 text-[12px]">View Details</span>
+          </button>
+          <button class="bg-orange-100 w-2/5 h-11 rounded-md flex justify-center items-center gap-2">
+            <lucide-icon [img]="ban" class="w-5 h-5 text-orange-700"></lucide-icon>
+
+            <span class="text-[12px] text-orange-700">Suspend</span>
+          </button>
+          <button class="bg-red-100 w-1/5 h-11 rounded-md flex justify-center items-center gap-2">
+            <lucide-icon [img]="trash" class="w-5 h-5 text-red-700"></lucide-icon>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</ion-content>

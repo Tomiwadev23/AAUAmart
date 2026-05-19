@@ -9,6 +9,42 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
+.cart-toast {
+  --background: #ffff ;
+  --color: #000000;
+  --border-radius: 10px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 14px;
+}
+@layer components{
+    .list {
+        @apply  p-3
+    }
+    .list:hover{
+        @apply bg-gray-100
+    }
+
+    .btn-big {
+        @apply bg-green-700 h-11 rounded-md  w-[90%] text-[15px]
+    }
+     .btn {
+        @apply bg-green-700 
+    }
+    .btn-big-outline {
+        @apply bg-white border border-green-700 text-green-700 h-11  w-[90%] text-[12px]
+    }
+}
+
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -24,6 +60,8 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
 
 /**
  * Ionic Dark Mode

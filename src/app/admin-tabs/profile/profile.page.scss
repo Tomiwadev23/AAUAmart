@@ -1,0 +1,12 @@
+.bb{
+    color:white;
+}
+.ios.toggle{
+   --track-background-checked:#7E22CE ;
+   --track-background:gray;
+}
+.md.toggle{
+   --track-background-checked:rgb(224, 224, 224) ;
+   --track-background:gray;
+   --handle-background-checked:#7E22CE;
+}

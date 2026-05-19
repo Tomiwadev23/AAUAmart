@@ -1,0 +1,66 @@
+<div class="ion-page">
+<ion-content [fullscreen]="true">
+
+
+
+<div class="w-full min-h-[100vh]">
+
+  <div class="bg-red-700">
+    <div class=" fixed top-2 left-2">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/splash" class="bb" ></ion-back-button>
+      </ion-buttons>
+    </div>
+  </div>
+
+  <div class="w-full h-full flex flex-col gap-7  pt-32 px-7 ">
+    <div class=" w-full ">
+      <span class="text-[22px] font-semibold">Choose Your Role</span>
+      <p class="text-[13px] text-gray-700">Select how your want to continue</p>
+    </div>
+    <div>
+      <div class=" w-full flex flex-col gap-4 ">
+
+        <div class="bg-green-50 border border-1 border-green-400 w-full flex gap-4 items-center p-4 rounded-lg" (click)="goToBuyersPage()">
+          <div class="bg-green-700 rounded-full h-14 w-14 flex items-center justify-center">
+            <lucide-icon [img]="shopping" class="text-gray-100"></lucide-icon>
+          </div>
+          <div>
+            <h1 class="font-semibold">Buyer </h1>
+            <span class="text-[13px]">Shop fresh agricultural products</span>
+
+          </div>
+
+        </div>
+        <div class="bg-blue-50 border border-1 border-blue-400 w-full flex gap-4 items-center p-4 rounded-lg" (click)="goToSellerPage()">
+          <div class="bg-blue-700 rounded-full h-14 w-14 flex items-center justify-center">
+            <lucide-icon [img]="store" class="text-gray-100"></lucide-icon>
+          </div>
+          <div>
+            <h1 class="font-semibold">Seller </h1>
+            <span class="text-[13px]">Sell your agricultural products</span>
+
+          </div>
+
+        </div>
+        <div class="bg-purple-50 border border-1 border-purple-400 w-full flex gap-4 items-center p-4 rounded-lg" (click)="goToAdminPage()">
+          <div class="bg-purple-700 rounded-full h-14 w-14 flex items-center justify-center">
+            <lucide-icon [img]="shield" class="text-gray-100"></lucide-icon>
+          </div>
+          <div>
+            <h1 class="font-semibold">Admin </h1>
+            <span class="text-[13px]">Manage Platfrom Operation</span>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
+</ion-content>
+</div>

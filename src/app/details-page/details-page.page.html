@@ -1,0 +1,99 @@
+<ion-content>
+  <div class="">
+    <div class=" fixed top-2 left-2">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/tab1" class="bb"></ion-back-button>
+      </ion-buttons>
+    </div>
+  </div>
+ 
+  <div class=" w-full h-[100vh] px-2 py-2 ">
+    <div>
+      <div class="bgp w-full h-[40vh] rounded-md ">
+
+      </div>
+
+      <p class="text-[30px] font-semibold">Fresh Tomatoes</p>
+      <div class=" flex gap-5">
+        <div class="bg-green-100 flex items-center p-1 rounded-md">
+          <ion-icon name="leaf-outline" class="text-green-800"></ion-icon>
+          <span class="text-[11px] text-green-800">100% Organic</span>
+        </div>
+        <div class="bg-green-100 flex items-center p-1 rounded-md">
+          <ion-icon name="leaf-outline" class="text-green-800"></ion-icon>
+          <span class="text-[11px] text-green-800">Non GMO</span>
+        </div>
+        <div class="bg-green-100 flex items-center p-1 rounded-md">
+          <ion-icon name="leaf-outline" class="text-green-800"></ion-icon>
+          <span class="text-[11px] text-green-800">Locally Grown</span>
+        </div>
+      </div>
+    </div>
+
+    <div class=" w-full  flex flex-col gap-4 ">
+      <!-- <span class="text-[13px]">In stock (50kg available)</span> -->
+      <div class=" w-full flex flex-col gap-2">
+        <span class="text-[13px]">Quantity (kg)</span>
+        <div>
+
+        </div>
+
+        <div class="flex flex-row items-center  gap-2 w-full justify-center">
+          <div class="  rounded-md gap-2 flex    overflow-hidden w-fit ">
+
+            <div class="b flex items-center bg-green-700 rounded-md px-7    justify-center active:bg-green-800" (click)="decrease()">
+              <span class="text-[25px] text-white">
+                -
+              </span>
+            </div>
+            <div class=" flex justify-center items-center p-3">
+              <span class="text-[20px] text-black">
+                {{count}}
+              </span>
+            </div>
+            <div class=" flex items-center bg-green-700 rounded-md px-7  justify-center active:bg-green-800" (click)="increase()">
+              <span class="text-[25px] text-white ">
+                +
+              </span>
+            </div>
+
+          </div>
+          <div>
+            <span>
+              kg
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <button
+        class="btn-big cursor-pointer text-[12px] active:bg-green-800 h-11 rounded-md text-white  w-full  flex items-center justify-center" (click)="showToast('Product Added To Cart')">
+        Add to cart
+      </button>
+
+      <div class=" w-full overflow-hidden flex flex-col gap-2 py-5 px-2">
+
+        <span class="text-[14px]  text-gray-800 font-semibold">
+          About This Product
+        </span>
+        <p class="text-[13px] text-gray-500  ">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti dignissimos accusantium maiores quis
+          incidunt voluptas quo vitae mollitia cumque molestias tempora, perspiciatis nihil. Illum laudantium et cumque
+          suscipit cupiditate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis a dolorem repudiandae neque
+          eligendi non distinctio asperiores quia quaerat itaque aliquid magni magnam, libero excepturi fugiat!
+          Deserunt, quo voluptatibus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis enim error dolores alias rerum
+          consequuntur voluptates iusto nobis soluta ipsa ducimus laudantium qui provident minima, quasi tempora
+          doloribus, autem quisquam.
+        </p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,219 @@
+<div class="ion-page">
+<ion-content [fullscreen]="true">
+  <div class="btn w-full py-3 flex flex-col gap-2 items-center justify-center px-2">
+
+
+      <div class=" fixed top-2 left-2 z-50">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/tab1" class="bb"></ion-back-button>
+      </ion-buttons>
+    </div>
+    <div class=" mt-12 gap-5 flex flex-col  w-full">
+      <div class=" gap-1 flex flex-col">
+        <h1 class="text-2xl font-semibold text-white">
+          Track Your Order
+        </h1>
+        <p class="text-white text-[14px]">
+          Track your fresh agricultural produce delivery in real-time
+        </p>
+      </div>
+
+      <div class="flex bg-white rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 ">
+        <ion-searchbar placeholder="Enter your order to track" class=" searchb   "></ion-searchbar>
+        <button class="bg-green-600 text-white text-[13px] items-center justify-center flex w-1/4 h-9 rounded-md">
+          Track
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class=" px-4 py-2  flex flex-col gap-3">
+    <div class="backdrop-blur-xl  flex flex-col bg-white/5 border border-gray-300 rounded-md p-3 shadow-lg flex gap-2 ">
+      <p class="w-full  text-[16px] text-black my-1 font-semibold">Order Summary</p>
+      <div class="  flex flex-col gap-5   ">
+        <div class="w-[1px] h-[200px] bg-green-700 fixed left-[26px] top-16 -z-50">
+
+        </div>
+
+        <div class=" flex flex-row items-center gap-3  ">
+          <div class="h-full  self-start">
+            <div class="bg-green-600 rounded-full p-2 w-7 h-7 flex items-center ">
+              <ion-icon name="checkmark" class="w-6 h-6 text-white"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between w-full">
+            <div class=" flex flex-col  w-[80%]">
+              <h2 class="text-[12px] text-gray-800">
+                Order Placed
+              </h2>
+              <p class="text-[11px] text-gray-500">Your Order has been confirmed and payment recieved</p>
+            </div>
+
+            <div class=" flex flex-col h-full  self-start">
+              <span class="text-[11px] text-gray-500">Apr 6,2026</span>
+              <span class="text-[11px] text-gray-500">10:30 AM</span>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class=" flex flex-row items-center gap-3  ">
+          <div class="h-full  self-start">
+            <div class="bg-green-600 rounded-full p-2 w-7 h-7 flex items-center ">
+              <ion-icon name="checkmark" class="w-6 h-6 text-white"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between w-full">
+            <div class=" flex flex-col  w-[80%]">
+              <h2 class="text-[12px] text-gray-800">
+                Order Picked & Packed
+              </h2>
+              <p class="text-[11px] text-gray-500">Fresh produce picked from the farm and Packed</p>
+            </div>
+
+            <div class=" flex flex-col h-full  self-start">
+              <span class="text-[11px] text-gray-500">Apr 6,2026</span>
+              <span class="text-[11px] text-gray-500">10:30 AM</span>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class=" flex flex-row items-center gap-3  ">
+          <div class="h-full  self-start">
+            <div class="bg-green-600 rounded-full p-2 w-7 h-7 flex items-center ">
+              <ion-icon name="checkmark" class="w-6 h-6 text-white"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between w-full mb-3">
+            <div class=" flex flex-col  w-[80%]">
+              <h2 class="text-[12px] text-gray-800">
+                Out for delivery
+              </h2>
+              <p class="text-[11px] text-gray-500">Package is on it way</p>
+            </div>
+
+            <div class=" flex flex-col h-full  self-start">
+              <span class="text-[11px] text-gray-500">Apr 6,2026</span>
+              <span class="text-[11px] text-gray-500">10:30 AM</span>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class=" flex flex-row items-center gap-3  ">
+          <div class="h-full  self-start">
+            <div class="bg-green-600 rounded-full p-2 w-7 h-7 flex items-center ">
+              <ion-icon name="checkmark" class="w-6 h-6 text-white"></ion-icon>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between w-full">
+            <div class=" flex flex-col  w-[80%]">
+              <h2 class="text-[12px] text-gray-800">
+                Delivery Expected
+              </h2>
+              <p class="text-[11px] text-gray-500">Your fresh produce will arrive today</p>
+            </div>
+
+            <div class=" flex flex-col h-full  self-start">
+              <span class="text-[11px] text-gray-500">Apr 6,2026</span>
+              <span class="text-[11px] text-gray-500">10:30 AM</span>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="backdrop-blur-xl  flex flex-col bg-white/5 border border-gray-300 rounded-md p-4 shadow-lg flex gap-5 ">
+      <p class="w-full  text-[16px] text-black my-1 font-semibold">Package Location</p>
+
+      <div class="bg-green-100  w-full h-32 rounded-md overflow-hidden flex justify-center relative items-center">
+        <div
+          class="bg-white shadow-md flex items-center  text-gray-800-600 text-[10px] w-fit h-fit px-2 py-1 rounded-md  absolute top-2 left-2">
+          <ion-icon name="pin-outline" class="text-green-600"></ion-icon>
+          Current location
+        </div>
+
+        <div class=" fadeout bg-green-600 p-5 w-[100px] h-[100px] rounded-full relative">
+
+        </div>
+        <div class="bg-green-600 rounded-full w-10 h-10 p-1 flex items-center justify-center absolute ">
+          <ion-icon name="navigate-outline" class="text-white w-6 h-6 "></ion-icon>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="bg-green-50 w-full rounded-md flex flex-row p-3 gap-2 ">
+        <div>
+          <ion-icon name="pin-outline" class="text-green-500"></ion-icon>
+        </div>
+        <div class="">
+          <h2 class="text-gray-800 text-[12px]">Current Location</h2>
+          <p class="text-[11px] text-gray-500">
+            Distribution Center- Akungba-Akoko , medoline hhdhdhdh ddkjdkjhd djhd
+          </p>
+
+
+        </div>
+      </div>
+<hr>
+
+      <div class=" w-full p-2 flex flex-col gap-2">
+        <span class="text-[12px] font-semibold text-gray-800">
+          Delivery Partner
+        </span>
+        <div class="flex flex-row gap-2 items-center">
+          <div class="bg-green-50 rounded-full flex items-center justify-center w-10 h-10 p-2">
+            <span class="text-green-800">J</span>
+          </div>
+          <div class="flex-col flex">
+            <span class="text-[12px] text-gray-800">John Martinez</span>
+            <p class="text-[11px] text-gray-500">+2349153258164</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="border-t border-gray-300 dark:border-gray-700 mt-5 mb-5 pt-6 text-center">
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        © 2026 AAUAmart. All rights reserved.
+      </p>
+    </div>
+</ion-content>
+</div>

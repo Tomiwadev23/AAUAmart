@@ -1,0 +1,106 @@
+<div class=" flex-col flex gap-3">
+
+  <div>
+    <div class=" w-full flex justify-between items-center mb-2"> <span class="text-[15px] font-semibold ">Featured Products</span>
+      <span class="text-green-600 underline text-[14px]">View all</span>
+    </div>
+    <div class="grid grid-cols-2 gap-3 pb-4">
+      <div *ngFor="let product of products"
+        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100">
+        <!-- Image -->
+        <div class="h-28 w-full overflow-hidden">
+          <img [src]="product.image" [alt]="product.name" class="h-full w-full object-cover" />
+        </div>
+
+        <!-- Content -->
+        <div class="p-2">
+          <h3 class="text-sm  truncate">
+            {{ product.name }}
+          </h3>
+
+          <p class="text-green-600 font-bold text-sm mt-1">
+            ₦{{ product.price | number }}
+          </p>
+
+          <span class="text-xs mt-1 inline-block" [class.text-green-500]="product.available"
+            [class.text-red-500]="!product.available">
+            {{ product.available ? 'Available' : 'Out of stock' }}
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div>
+    <div class=" w-full flex justify-between items-center mb-2"> <span class="text-[15px] font-semibold ">Best Sellers</span>
+      <span class="text-green-600  text-[14px] underline">View all</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 pb-4">
+      <div *ngFor="let product of products"
+        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100">
+        <!-- Image -->
+        <div class="h-28 w-full overflow-hidden">
+          <img [src]="product.image" [alt]="product.name" class="h-full w-full object-cover" />
+        </div>
+
+        <!-- Content -->
+        <div class="p-2">
+          <h3 class="text-sm truncate">
+            {{ product.name }}
+          </h3>
+
+          <p class="text-green-600 font-bold text-sm mt-1">
+            ₦{{ product.price | number }}
+          </p>
+
+          <span class="text-xs mt-1 inline-block" [class.text-green-500]="product.available"
+            [class.text-red-500]="!product.available">
+            {{ product.available ? 'Available' : 'Out of stock' }}
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+   <div>
+    <div class=" w-full flex justify-between items-center mb-2"> <span class="text-[15px] font-semibold ">All Categories</span>
+      <span class="text-green-600 text-[14px] underline">View all</span>
+    </div>
+    <div class="grid grid-cols-2 gap-3 pb-4">
+      <div *ngFor="let product of products"
+        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100">
+        <!-- Image -->
+        <div class="h-28 w-full overflow-hidden">
+          <img [src]="product.image" [alt]="product.name" class="h-full w-full object-cover" />
+        </div>
+
+        <!-- Content -->
+        <div class="p-2">
+          <h3 class="text-sm  truncate">
+            {{ product.name }}
+          </h3>
+
+          <p class="text-green-600 font-bold text-sm mt-1">
+            ₦{{ product.price | number }}
+          </p>
+
+          <span class="text-xs mt-1 inline-block" [class.text-green-500]="product.available"
+            [class.text-red-500]="!product.available">
+            {{ product.available ? 'Available' : 'Out of stock' }}
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>

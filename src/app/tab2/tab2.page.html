@@ -1,17 +1,86 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div
+    class=" btn w-full py-3 flex  px-3 sticky left-0 top-0 right-0 z-50 shadow-xl">
+    <div class="pt-5  gap-7  justify-center flex flex-col  w-full h-full">
+      <div class=" gap-1 flex flex-col ">
+        <h1 class="text-2xl font-semibold text-white">Review Your Cart</h1>
+        <p class="text-[14px] text-white">Review and search through your cart,add more carts</p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      </div>
+      <div class="flex bg-white rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 w-full ">
+        <ion-searchbar placeholder="Search for cart" class=" searchb   "></ion-searchbar>
+        <button class="btn text-white text-[13px] items-center justify-center flex w-1/4 h-9 rounded-md">
+          Search
+          <!-- <ion-icon name="options-outline" class="w-7 h-7 text-white"></ion-icon> -->
+        </button>
+      </div>
+    </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  </div>
+
+
+  <div class="bg-gray-50 h-fit pt-4  px-4 w-full">
+    <div class="flex flex-col gap-3   ">
+      @for(cart of carts;track cart){
+      <div class=" backdrop-blur-xl border  border-gray-300 bg-white rounded-md p-4 shadow-md flex gap-2 " >
+        <div class="bg-green-500 rounded-md h-20 w-20 " (click)="goToDetails()">
+
+        </div>
+        <div class=" overflow-hidden h-fit  w-full " (click)="goToDetails()">
+          <div class="flex flex-col">
+            <span class="text-[12px] font-semibold text-black">{{cart.name}}</span>
+            <span class="text-[11px] text-black">Samsung</span>
+            <span class="text-[11px] text-black">{{cart.processor}}</span>
+          </div>
+
+
+          <div class=" flex mt-1 items-center    ">
+          
+            <div class="">
+              <span class="text-[15px] font-semibold text-green-700">{{cart.amount}} $</span>
+            </div>
+
+
+          </div>
+         
+
+        </div>
+ <div class=" fixed top-2 right-3 ">
+            <ion-icon name="close" class="text-black w-5 h-5"></ion-icon>
+          </div>
+      </div>
+      }
+
+      <div class=" mt-5 flex flex-col bg-white border border-gray-300 rounded-md p-4 shadow-md  gap-2">
+        <p class="w-full  text-[14px] text-black my-1">Order Summary</p>
+        <li class="flex justify-between text-black text-[13px]"><span
+            class="font-medium text-black text-[13px]">SubTotal</span>$2037.00</li>
+        <li class="flex justify-between text-black text-[13px]"><span
+            class="font-medium text-black text-[13px]">Shipping</span> $145</li>
+
+        <hr class="bg-black/30 my-1">
+        <li class="flex justify-between text-black text-[13px]"><span
+            class="font-medium text-black text-[13px]">Total</span> $30024.00</li>
+
+        <div class="w-full h-fit gap-2 flex flex-col mt-4">
+          <button class="w-full btn-big p-2 text-[] rounded-md flex justify-center items-center text-white  text-[12px]">
+            Proceed To Checkout
+
+          </button>
+          <button
+            class="w-full btn-big-outline border border-solid border-green-500 p-2  rounded-md   flex items-center justify-center text-green-600 text-[12px] ">
+            Continue Shopping
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
 </ion-content>

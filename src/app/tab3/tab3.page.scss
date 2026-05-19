@@ -1,0 +1,14 @@
+.searchb {
+    --background: white;
+    height: 10px;
+    --box-shadow:none;
+}
+
+.open {
+    transition:height all 1s ease-in-out;
+    height: fit-content;
+    padding:14px;
+
+
+
+}

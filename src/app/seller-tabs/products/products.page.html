@@ -1,0 +1,186 @@
+<ion-header>
+  <ion-toolbar class="kk">
+    <div class=" w-full  pt-10 pb-3 px-4 h-full flex flex-col items-center   gap-4">
+      <div class=" w-full justify-between flex items-center">
+        <span class="text-[23px] font-bold text-black">My Products</span>
+        <ion-chip class="bg-gray-50 border" (click)="goToCreateProduct()">
+
+          <ion-label>Add Product</ion-label>
+          <ion-avatar class="bg-blue-700 flex items-center justify-center">
+            <ion-icon name="add" class="w-5 h-5 text-white"></ion-icon>
+          </ion-avatar>
+        </ion-chip>
+      </div>
+
+      <div class="flex bg-gray-50 pt-3 border rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 w-full ">
+        <ion-searchbar placeholder="Enter order to track " class=" searchb   "></ion-searchbar>
+      
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="whole ">
+
+  <div class="w-full px-4 py-4   flex flex-col gap-4 ">
+    <div class=" w-full bg-white  rounded-md border shadow-lg flex gap-3 p-3 ">
+      <div class="bg-blue-700 h-14 rounded-lg  w-16">
+
+      </div>
+      <div class="w-full ">
+        <div class="flex flex-col gap-1">
+          <span class="text-[14px]">Fresh Tomatoes</span>
+          <h5 class="text-gray-500 text-[11px]">Vegetables</h5>
+          <p class="text-[11px] text-gray-500"><span class="text-[12px] text-black font-semibold">700</span> per kg</p>
+        </div>
+
+        <div class="w-full  py-2 flex justify-between items-center gap-3">
+          <button
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center"
+            (click)="goToEditProduct()">
+            <lucide-icon [img]="edit" class="w-4 h-4 text-blue-700"></lucide-icon>
+            Edit</button>
+          <button
+            class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center" (click)="showAlert('Are you sure you want to delete')">
+            <lucide-icon [img]="trash" class="w-4 h-4 "></lucide-icon>
+            Delete</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class=" w-full bg-white  rounded-md border shadow-lg flex gap-3 p-3 ">
+      <div class="bg-blue-700 h-14 rounded-lg  w-16">
+
+      </div>
+      <div class="w-full ">
+        <div class="flex flex-col gap-1">
+          <span class="text-[14px]">Fresh Tomatoes</span>
+          <h5 class="text-gray-500 text-[11px]">Vegetables</h5>
+          <p class="text-[11px] text-gray-500"><span class="text-[12px] text-black font-semibold">700</span> per kg</p>
+        </div>
+
+        <div class="w-full  py-2 flex justify-between items-center gap-3">
+          <button
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center">
+            <lucide-icon [img]="edit" class="w-4 h-4 text-blue-700"></lucide-icon>
+            Edit</button>
+          <button
+            class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center">
+            <lucide-icon [img]="trash" class="w-4 h-4 "></lucide-icon>
+            Delete</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class=" w-full bg-white  rounded-md border shadow-lg flex gap-3 p-3 ">
+      <div class="bg-blue-700 h-14 rounded-lg  w-16">
+
+      </div>
+      <div class="w-full ">
+        <div class="flex flex-col gap-1">
+          <span class="text-[14px]">Fresh Tomatoes</span>
+          <h5 class="text-gray-500 text-[11px]">Vegetables</h5>
+          <p class="text-[11px] text-gray-500"><span class="text-[12px] text-black font-semibold">700</span> per kg</p>
+        </div>
+
+        <div class="w-full  py-2 flex justify-between items-center gap-3">
+          <button
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center">
+            <lucide-icon [img]="edit" class="w-4 h-4 text-blue-700"></lucide-icon>
+            Edit</button>
+          <button
+            class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center">
+            <lucide-icon [img]="trash" class="w-4 h-4 "></lucide-icon>
+            Delete</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class=" w-full bg-white  rounded-md border shadow-lg flex gap-3 p-3 ">
+      <div class="bg-blue-700 h-14 rounded-lg  w-16">
+
+      </div>
+      <div class="w-full ">
+        <div class="flex flex-col gap-1">
+          <span class="text-[14px]">Fresh Tomatoes</span>
+          <h5 class="text-gray-500 text-[11px]">Vegetables</h5>
+          <p class="text-[11px] text-gray-500"><span class="text-[12px] text-black font-semibold">700</span> per kg</p>
+        </div>
+
+        <div class="w-full  py-2 flex justify-between items-center gap-3">
+          <button
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center">
+            <lucide-icon [img]="edit" class="w-4 h-4 text-blue-700"></lucide-icon>
+            Edit</button>
+          <button
+            class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center">
+            <lucide-icon [img]="trash" class="w-4 h-4 "></lucide-icon>
+            Delete</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class=" w-full bg-white  rounded-md border shadow-lg flex gap-3 p-3 ">
+      <div class="bg-blue-700 h-14 rounded-lg  w-16">
+
+      </div>
+      <div class="w-full ">
+        <div class="flex flex-col gap-1">
+          <span class="text-[14px]">Fresh Tomatoes</span>
+          <h5 class="text-gray-500 text-[11px]">Vegetables</h5>
+          <p class="text-[11px] text-gray-500"><span class="text-[12px] text-black font-semibold">700</span> per kg</p>
+        </div>
+
+        <div class="w-full  py-2 flex justify-between items-center gap-3">
+          <button
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-md text-[12px] w-1/2 flex items-center gap-1 justify-center">
+            <lucide-icon [img]="edit" class="w-4 h-4 text-blue-700"></lucide-icon>
+            Edit</button>
+          <button
+            class="bg-red-50 text-red-700 px-4 py-2 rounded-md text-[12px] w-1/2  flex items-center gap-1 justify-center">
+            <lucide-icon [img]="trash" class="w-4 h-4 "></lucide-icon>
+            Delete</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+  <div class="border-t border-gray-300 dark:border-gray-700 mt-3 mb-5 pt-6 text-center">
+    <p class="text-sm text-gray-600 dark:text-gray-400">
+      © 2026 AAUAmart. All rights reserved.
+    </p>
+  </div>
+</ion-content>

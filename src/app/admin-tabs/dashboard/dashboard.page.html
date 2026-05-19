@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="bg-white w-full pt-3 px-1  ">
+      <div class="flex items-center justify-between px-4 bg-white py-3 h-full w-full">
+        <div>
+          <span class="text-black text-[19px] font-semibold">Admin Panel</span>
+          <h1 class="text-[13px] text-gray-600 ">Manage your Platform</h1>
+        </div>
+
+        <div class="bg-red-500 h-14 w-14 rounded-full">
+        </div>
+      </div>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="kk">
+
+
+
+  <div class=" w-full p-4  flex flex-col gap-5  ">
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-3">
+      @for( tote of products();track tote){
+      <div class=" betty  bg-white p-4 rounded-md shadow-lg  border ">
+        <div class="flex flex-col  items-left mb-3 w-full">
+          <div class="flex justify-between items  w-full">
+            <h2 class="text-[12px]  text-gray-600">{{tote.type}}</h2>
+
+
+
+          </div>
+          <div class=" flex items-center  w-full justify-between">
+            <p class="text-2xl font-bold text-gray-800 tiny:text-xl">{{tote.amount}}</p>
+            <div class="bg-purple-200 p-2 rounded-md">
+              <lucide-icon [img]="tote.icon" class="text-purple-900 text-w-4 h-5">
+
+              </lucide-icon>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 text-[12px]">{{tote.card}}</p>
+      </div>
+      }
+    </div>
+    <div class=" w-full h-[330px] flex flex-col gap-3 pb-[20px] ">
+      <p class="text-[15px]">Recent Activities</p>
+      <div class="bg-white p-3 rounded-md shadow-lg border">
+        <div class=" w-full flex items-center gap-3 px-2 py-3 ">
+          <div class="rounded-full size-3 bg-blue-700">
+
+
+          </div>
+          <div class="flex flex-col w-full ">
+
+            <div class="flex items-center justify-between w-full">
+              <p class="text-[12px]">New Seller Account Created</p>
+              <span class="text-[11px] text-gray-500">10 mins ago</span>
+            </div>
+            <p class="text-[12px] text-gray-600">Omoniyi tomiwa</p>
+          </div>
+        </div>
+          <div class=" w-full flex items-center gap-3 px-2 py-3 ">
+        <div class="rounded-full w-3 h-3 bg-blue-700">
+
+
+        </div>
+        <div class="flex flex-col w-full">
+
+          <div class="flex items-center justify-between w-full">
+            <p class="text-[12px]">New Seller Account Created</p>
+            <span class="text-[11px] text-gray-500">10 mins ago</span>
+          </div>
+          <p class="text-[12px] text-gray-600">Omoniyi tomiwa</p>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+   <div class="border-t border-gray-300 dark:border-gray-700 mt-1 mb-5 pt-6 text-center">
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        © 2025 AAUAmart. All rights reserved.
+      </p>
+    </div>
+</ion-content>

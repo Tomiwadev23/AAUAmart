@@ -1,0 +1,73 @@
+<div class="ion-page">
+  <ion-content [fullscreen]="true">
+<div class="w-full min-h-[100vh]  flex items-center justify-center px-4">
+  <div class="w-full ">
+    <div class="">
+      <div class=" fixed top-2 left-2">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="buyers-page" class="bb"></ion-back-button>
+        </ion-buttons>
+      </div>
+    </div>
+    <div class="flex flex-col gap-2  w-full flex items-center">
+      <div class="bg-green-700 w-16 h-16 rounded-full flex items-center justify-center ">
+
+        <lucide-icon [img]="shopping" class="text-white"></lucide-icon>
+      </div>
+
+      <h1 class="text-[20px] font-bold">Buyers SignUp</h1>
+      <p class="text-gray-500 dark:text-gray-300  text-[13px]">Create An Account</p>
+
+    </div>
+
+
+
+    <form action="" class="w-full items-center  justify-center flex flex-col mt-1 gap-2 pb-5 overflow-y-scroll ">
+      <div class="gap-2 flex flex-col mb-1 w-full">
+        <label for="" class="text-[13px]">Full Name</label>
+        <input type="text" name="fullname" autocomplete="fullname"
+          class="outline-none  h-11 rounded-md w-full border border-gray-300 pl-2 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 bg-gray-100"
+          placeholder="Enter fullname" />
+      </div>
+      <div class="gap-2 flex flex-col mb-1 w-full">
+        <label for="" class="text-[13px]">Email</label>
+        <input type="text" name="email" autocomplete="email"
+          class="outline-none  h-11 rounded-md w-full border border-gray-300 pl-2 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 bg-gray-100"
+          placeholder="Enter email" />
+      </div>
+      <div class="gap-2 flex flex-col mb-1 w-full">
+        <label for="" class="text-[13px]">Password</label>
+        <input type="password" name="password" autocomplete="password"
+          class="outline-none  h-11 rounded-md w-full border border-gray-300 pl-2 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 bg-gray-100"
+          placeholder="Enter password" />
+      </div>
+      <div class="gap-2 flex flex-col mb-1 w-full">
+        <label for="" class="text-[13px]"> Confirm Password</label>
+        <input type="password" name="Confirm password" autocomplete="password"
+          class="outline-none  h-11 rounded-md w-full border border-gray-300 pl-2 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 bg-gray-100"
+          placeholder="Confirm password" />
+      </div>
+
+      <div class="flex w-full items-center  gap-1 my-1 px-1 ">
+        <ion-checkbox class=""></ion-checkbox>
+        <p class="text-[13px] ">
+          I agree with <span class="underline text-green-700  "> <a href="">Terms and Conditions</a> </span>
+        </p>
+      </div>
+
+      <button type="submit"
+        class="btn-big cursor-pointer text-[15px]  h-11 rounded-md text-white mt-2 w-full disabled:bg-blue-300 flex items-center justify-center "
+        (click)="goToVerifyemail()">
+        Create Account
+
+      </button>
+      <p class="text-gray-500 mt-2 text-[14px]">Already have an Account? <span
+          class="text-green-700 underline font-semibold text-[14px]" (click)="goToBuyersPage()">Login</span></p>
+
+    </form>
+  </div>
+
+</div>
+  </ion-content>
+
+</div>

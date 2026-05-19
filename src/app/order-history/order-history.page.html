@@ -1,0 +1,92 @@
+<div class="ion-page">
+<ion-header>
+  <div class="btn w-full h-[200px] flex  px-3 sticky left-0 top-0 right-0 z-50 shadow-xl">
+     <div class=" fixed top-2 left-2 z-50">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/tab1" class="bb"></ion-back-button>
+      </ion-buttons>
+    </div>
+
+    <div class="pt-8  gap-7  justify-center flex flex-col  w-full h-full   ">
+      <div class=" gap-1 flex flex-col">
+        <h1 class="text-2xl font-semibold text-white">
+          Order History
+        </h1>
+        <p class="text-white text-[13px]">
+          Search and View your order History
+        </p>
+      </div>
+
+      <div class="flex bg-white rounded-md  gap-1 h-[50px]  justify-center items-center pr-2 w-full ">
+        <ion-searchbar placeholder="Enter your order to search" class=" searchb   "></ion-searchbar>
+        <button class="btn text-white text-[13px] items-center justify-center flex w-1/4 h-9 rounded-md">
+          Search
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-list class="bg">
+      <ion-item-sliding>
+     
+
+        <ion-item button="true">
+       <div class="w-full   flex flex-col gap-2 py-3">
+        <p class="text-[13px] ">#ORD-2345</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gray-900 text-[12px]">Fresh Tomatoes(5kg)</p>
+          <span class="text-[15px] font-semibold text-green-500">#3500</span>
+        </div>
+        <div class="flex items-center gap-2" >
+          <p class="text-gray-500 text-[12px]">Green Valley Farm</p>
+          <span class="text-gray-500 text-[12px]">May 8,2026</span>
+        </div>
+
+       </div>
+        </ion-item>
+
+        <ion-item-options side="end">
+         
+          <ion-item-option color="danger">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding>
+     
+
+        <ion-item button="true">
+       <div class="w-full   flex flex-col gap-2 py-3">
+        <p class="text-[13px] ">#ORD-2345</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gray-900 text-[12px]">Fresh Tomatoes(5kg)</p>
+          <span class="text-[15px] font-semibold text-green-500">#3500</span>
+        </div>
+        <div class="flex items-center gap-2" >
+          <p class="text-gray-500 text-[12px]">Green Valley Farm</p>
+          <span class="text-gray-500 text-[12px]">May 8,2026</span>
+        </div>
+
+       </div>
+        </ion-item>
+
+        <ion-item-options side="end">
+         
+          <ion-item-option color="danger">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+
+
+  
+</ion-content>
+</div>
