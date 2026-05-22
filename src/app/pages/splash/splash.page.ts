@@ -44,11 +44,8 @@ export class SplashPage implements OnInit {
 
   }
   goTohome(real:boolean){
-    this.setOpen(real)
-       setTimeout(()=>{
-this.navCtrl.navigateRoot('/tabs/tab1');
+    this.router.navigate(['/tabs/tab1'])
 
-    },500)
 
   }
   goToVerifyemail(real:boolean) {

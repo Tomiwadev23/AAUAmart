@@ -105,25 +105,25 @@ export const routes: Routes = [
   },
   {
     path: 'admin-tabs',
-    loadComponent: () => import('./admin-tabs/admin-tabs.page').then( m => m.AdminTabsPage),
-    children:[
-{
-    path: 'dashboard',
-    loadComponent: () => import('./admin-tabs/dashboard/dashboard.page').then( m => m.DashboardPage)
-  },
-  {
-    path: 'sellers',
-    loadComponent: () => import('./admin-tabs/sellers/sellers.page').then( m => m.SellersPage)
-  },
-  {
-    path: 'buyers',
-    loadComponent: () => import('./admin-tabs/buyers/buyers.page').then( m => m.BuyersPage)
-  },
-  {
-    path: 'profile',
-    loadComponent: () => import('./admin-tabs/profile/profile.page').then( m => m.ProfilePage)
-  },
-  {
+    loadComponent: () => import('./admin-tabs/admin-tabs.page').then(m => m.AdminTabsPage),
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () => import('./admin-tabs/dashboard/dashboard.page').then(m => m.DashboardPage)
+      },
+      {
+        path: 'sellers',
+        loadComponent: () => import('./admin-tabs/sellers/sellers.page').then(m => m.SellersPage)
+      },
+      {
+        path: 'buyers',
+        loadComponent: () => import('./admin-tabs/buyers/buyers.page').then(m => m.BuyersPage)
+      },
+      {
+        path: 'profile',
+        loadComponent: () => import('./admin-tabs/profile/profile.page').then(m => m.ProfilePage)
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'
@@ -134,31 +134,31 @@ export const routes: Routes = [
   },
   {
     path: 'createseller-page',
-    loadComponent: () => import('./createseller-page/createseller-page.page').then( m => m.CreatesellerPagePage)
+    loadComponent: () => import('./createseller-page/createseller-page.page').then(m => m.CreatesellerPagePage)
   },
   {
     path: 'createproductpage',
-    loadComponent: () => import('./createproductpage/createproductpage.page').then( m => m.CreateproductpagePage)
+    loadComponent: () => import('./createproductpage/createproductpage.page').then(m => m.CreateproductpagePage)
   },
   {
     path: 'order-history',
-    loadComponent: () => import('./order-history/order-history.page').then( m => m.OrderHistoryPage)
+    loadComponent: () => import('./order-history/order-history.page').then(m => m.OrderHistoryPage)
   },
   {
     path: 'buyer-address',
-    loadComponent: () => import('./buyer-address/buyer-address.page').then( m => m.BuyerAddressPage)
+    loadComponent: () => import('./buyer-address/buyer-address.page').then(m => m.BuyerAddressPage)
   },
   {
     path: 'buyer-profile',
-    loadComponent: () => import('./buyer-profile/buyer-profile.page').then( m => m.BuyerProfilePage)
+    loadComponent: () => import('./buyer-profile/buyer-profile.page').then(m => m.BuyerProfilePage)
   },
   {
     path: 'editprofile',
-    loadComponent: () => import('./editprofile/editprofile.page').then( m => m.EditprofilePage)
+    loadComponent: () => import('./editprofile/editprofile.page').then(m => m.EditprofilePage)
   },
   {
     path: 'editproduct',
-    loadComponent: () => import('./editproduct/editproduct.page').then( m => m.EditproductPage)
+    loadComponent: () => import('./editproduct/editproduct.page').then(m => m.EditproductPage)
   }
-  
+
 ];
